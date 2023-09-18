@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const AccountMenu = () => {
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEle, setanchorEle] = useState(null);
 
-    const open = Boolean(anchorEl);
+    const open = Boolean(anchorEle);
 
     const { currentRole, currentUser } = useSelector(state => state.user);
 
     const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
+        setanchorEle(event.currentTarget);
     };
     const handleClose = () => {
-        setAnchorEl(null);
+        setanchorEle(null);
     };
     return (
         <>
@@ -36,7 +36,7 @@ const AccountMenu = () => {
                 </Tooltip>
             </Box>
             <Menu
-                anchorEl={anchorEl}
+                anchorEle={anchorEle}
                 id="account-menu"
                 open={open}
                 onClose={handleClose}
