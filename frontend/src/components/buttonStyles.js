@@ -7,9 +7,7 @@ export const RedButton = styled(Button)`
     color: white;
     margin-left: 4px;
     &:hover {
-      background-color: #eb7979;
-      border-color: #f26767;
-      box-shadow: none;
+      background-color: #eb7978;
     }
   }
 `;
